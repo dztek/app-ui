@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 export default {
   content: ['./public/index.html', './src/**/*.svelte'],
   plugins: [

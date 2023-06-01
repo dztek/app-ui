@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w --single --host",
-    "lint": "eslint src --ext .svelte",
-    "start": "sirv public --no-clear"
+    "dev": "rollup -c -w",
+    "lint": "eslint src --ext .svelte,.js",
+    "start": "sirv public --no-clear --host --single"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",
@@ -24,6 +24,7 @@
     "rollup": "^3.23.0",
     "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-svelte": "^7.1.5",
     "svelte": "^3.59.1",
     "tailwindcss": "^3.3.2"
